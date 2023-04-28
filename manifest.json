@@ -1,0 +1,21 @@
+{
+	"browser_specific_settings": {
+		"gecko": {
+			"strict_min_version": "58.0a1"
+		}
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"browser_style": false,
+		"default_title": "Webcomics Reader",
+		"default_popup": "rss.html"
+	},
+	"description": "A DIY RSS Feed Reader - made for Webcomics Day 2023.",
+	"homepage_url": "https://github.com/t-valentine/diy-rss",
+	"manifest_version": 2,
+	"name": "Webcomics Reader",
+	"permissions": ["tabs"],
+	"version": "1.0"
+}
