@@ -12,6 +12,9 @@
 		"default_title": "Webcomics Reader",
 		"default_popup": "rss.html"
 	},
+	"icons": {
+		"48": "img/icon48.png"
+	},
 	"description": "A DIY RSS Feed Reader - made for Webcomics Day 2023.",
 	"homepage_url": "https://github.com/t-valentine/diy-rss",
 	"manifest_version": 2,
