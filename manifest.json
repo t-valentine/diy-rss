@@ -6,7 +6,7 @@
 	},
 	"background": {
 		"scripts": ["background.js"],
-		"persistent": false
+		"persistent": true
 	},
 	"browser_action": {
 		"browser_style": false,
@@ -20,6 +20,6 @@
 	"homepage_url": "https://github.com/t-valentine/diy-rss",
 	"manifest_version": 2,
 	"name": "Webcomics Reader",
-	"permissions": ["tabs"],
+	"permissions": ["alarms"],
 	"version": "1.0"
 }

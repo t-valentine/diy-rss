@@ -65,9 +65,16 @@ async function getBadgeText() {
 	await getRSSFeed();
 }
 
-// the color of the badge text, can be an excepted color word or HEX code
+// runs the "getBadgeText" function when you install the app
+getBadgeText();
+
+// tells the browser to check for updates every hour
+// if you'd like your extension to check in less or more time, feel free to fiddle with the minutes
+// setting it to run every minute or something ridiculous like that COULD slow down your browser
+browser.alarms.onAlarm.addListener(getBadgeText);
+browser.alarms.create("getBadgeText", { periodInMinutes: 60 });
+
+// the color of the badge text, can be an accepted color word or HEX code
 browser.browserAction.setBadgeTextColor({ color: "white" });
 // the background color of the badge
 browser.browserAction.setBadgeBackgroundColor({ color: "#ff8d23" });
-
-getBadgeText();
