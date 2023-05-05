@@ -45,6 +45,8 @@ function getRSSFeed() {
 	});
 }
 
+total = 1;
+
 // this Function checks each update date to see if one of them updated today
 function checkDates(feedArray) {
 	feedArray.forEach((item) => {
@@ -56,6 +58,12 @@ function checkDates(feedArray) {
 		// text IF there was a comic updated today
 		if (today.toDateString() === updateDate.toDateString()) {
 			browser.browserAction.setBadgeText({ text: "!" });
+			// If you use Chrome:
+			// chrome.browserAction.setBadgeText({ text: "!" });
+		} else {
+			browser.browserAction.setBadgeText({ text: "" });
+			// If you use Chrome:
+			// chrome.browserAction.setBadgeText({ text: "" });
 		}
 	});
 }

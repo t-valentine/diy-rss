@@ -35,7 +35,7 @@ style.css
 ### What Each File Does
 
 - The `img` folder has the icon that appears in your browser, the icon itself is called `icon48.png` and comes from [Icons8](https://icons8.com/icon/68819/edit-image) (which is a great resource, if you want a different icon). The icon itself is 48 x 48 pixels. Technically, it's good practice to have multiple sizes of your icon, but since this is just something we're doing for fun, it's only got one size.
-- `background.js` runs in the background and creates a badge if a comic updates today. This is where you'll add the RSS Feed links of comics you want to follow, and also where you can change the color of the badge if you want.
+- `mozilla.js` and `chrome.js` runs in the background and creates a badge if a comic updates today. This is where you'll add the RSS Feed links of comics you want to follow, and also where you can change the color of the badge if you want. Depending on the browser you use, you will have to switch the file on `manifest.json` and `rss.html`
 - `LICENSE` this is a Software License and tells people what they're allowed to do with this code- which is anything! I don't care, do whatever you want with this. If having extra files around will confuse you, delete it.
 - `manifest.json` tells your browser about the extension, and tells the extension how to behave on the browser. There's no comments in this file, you would _only_ need to edit the file if you changed the icon file name from `icon48.png`. (Unless you're doing something crazy with my code, this explanation is for new coders after all.)
 - `README.md` is what you're reading right now. Feel free to delete if you don't need the guide.

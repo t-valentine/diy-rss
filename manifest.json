@@ -1,11 +1,12 @@
 {
 	"browser_specific_settings": {
 		"gecko": {
+			"id": "hialmberi95@yahoo.com",
 			"strict_min_version": "58.0a1"
 		}
 	},
 	"background": {
-		"scripts": ["background.js"],
+		"scripts": ["background/mozilla.js"],
 		"persistent": true
 	},
 	"browser_action": {
