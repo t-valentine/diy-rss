@@ -11,6 +11,10 @@ function editUpdate(update, comicTitle) {
 			update = updateArray[1];
 		}
 	}
+	if (update.includes("comic")) {
+		updateArray = update.split(" - ");
+		update = updateArray[1];
+	}
 	return update;
 }
 
@@ -44,6 +48,10 @@ async function getRSSFeed() {
 			.then((data) => {
 				// gets the comic's title
 				var comicTitle = data.querySelector("title").innerHTML;
+
+				if (comicTitle === "comic") {
+					comicTitle = "Fairmeadow";
+				}
 
 				// gets the comic's most recent update (counting in code starts at 0, not 1)
 				const updateData = data.querySelectorAll("item")[0];
