@@ -6,7 +6,7 @@
 		}
 	},
 	"background": {
-		"scripts": ["background/mozilla.js"],
+		"scripts": ["background/firefox.js"],
 		"persistent": true
 	},
 	"browser_action": {
