@@ -4,72 +4,74 @@
 
 /*Styles the main portion of the extension*/
 body {
-  width: 325px;
-  font-family: "Atkinson Hyperlegible", sans-serif; /*If you add a new font, declare it here too*/
-  margin: 0; /*Allows sides of table to touch the edge of the extension */
+	background-color: #f1f1f1;
+	width: 325px;
+	font-family: "Atkinson Hyperlegible", sans-serif; /*If you add a new font, declare it here too*/
+	margin: 0; /*Allows sides of table to touch the edge of the extension */
 }
 
 /*Styles the 'RSS Reader' heading*/
 h1 {
-  /* f you want the header and table to have different fonts, use this: 
+	/* f you want the header and table to have different fonts, use this: 
     font-family: "Atkinson Hyperlegible", sans-serif; */
-  text-align: center;
-  font-size: 21px;
+	text-align: center;
+	font-size: 21px;
 }
 
 /*General styling for the table*/
 table {
-  /* f you want the header and table to have different fonts, use this: 
+	/* f you want the header and table to have different fonts, use this: 
     font-family: "Atkinson Hyperlegible", sans-serif; */
-  border-collapse: collapse; /* Keeps there from being gaps between table rows and columns */
-  width: 100%;
-  margin-bottom: 1em; /* Adds space between bottom of table and bottom of window*/
+	border-collapse: collapse; /* Keeps there from being gaps between table rows and columns */
+	width: 100%;
+	margin-top: 1em;
+	margin-bottom: 1em; /* Adds space between bottom of table and bottom of window*/
 }
 
 /*General styling for the table rows*/
 td,
 th {
-  border: 1px solid transparent; /* Sets border line of table, can sub transparent for a color code */
-  padding: 8px;
-  text-align: center;
+	border: 1px solid transparent; /* Sets border line of table, can sub transparent for a color code */
+	padding: 8px;
+	text-align: center;
 }
 
 /*This styles every other row (the odd rows) and gives the webcomic name it's style*/
 tr:nth-child(odd) {
-  background-color: white;
-  font-size: 0.9em;
-  font-weight: bold;
+	background-color: white;
+	font-size: 0.75em;
+	font-weight: bold;
 }
 
 /*This styles every other row (the even rows) and gives the update info it's style*/
 tr:nth-child(even) {
-  background-color: #dddddd;
-  font-size: 0.75em;
+	background-color: #dddddd;
+	font-size: 0.75em;
 }
 
 /*Styles the update links*/
 tr td a {
-  text-decoration: none; /*By default, links have an underline*/
-  color: #463fa3;
+	text-decoration: none; /*By default, links have an underline*/
+	color: #463fa3;
 }
 
 /* Changes the update row's styling when a user hovers on it*/
 tr:nth-child(even):hover {
-  color: white;
-  background-color: #463fa3;
+	color: white;
+	background-color: #463fa3;
 }
 
 /*Changes the links' styling when a user hovers on the row*/
 tr:nth-child(even):hover > td a {
-  color: white;
+	color: white;
 }
 
 /* Changes the link when a user hovers directly on it */
 tr:nth-child(even):hover > td a:hover {
-  color: #ead0ff;
+	color: #ead0ff;
 }
 
 /* Changes the color of the update star */
 .update-today {
-  color: #ff8d23;
+	color: #ff8d23;
 }
