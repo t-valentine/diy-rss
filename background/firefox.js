@@ -53,6 +53,7 @@ total = 1;
 
 // this Function checks each update date to see if one of them updated today
 function checkDates(feedArray) {
+	let updateflag = false;
 	feedArray.forEach((item) => {
 		let updateDate = item[1];
 		updateDate = new Date(updateDate);
@@ -62,10 +63,15 @@ function checkDates(feedArray) {
 		// text IF there was a comic updated today
 		if (today.toDateString() === updateDate.toDateString()) {
 			browser.browserAction.setBadgeText({ text: "!" });
+			// if there's an update, marks the flag as true
+			updateflag = true;
 		}
 	});
+	// if there's no updates, this will still be false and the badge will be cleared
+	if (!updateflag) {
+		browser.browserAction.setBadgeText({ text: "!" });
+	}
 }
-
 // this function waits to see if a comic was updated today
 async function getBadgeText() {
 	await getRSSFeed();
