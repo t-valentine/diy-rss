@@ -58,12 +58,6 @@ function checkDates(feedArray) {
 		// text IF there was a comic updated today
 		if (today.toDateString() === updateDate.toDateString()) {
 			browser.browserAction.setBadgeText({ text: "!" });
-			// If you use Chrome:
-			// chrome.browserAction.setBadgeText({ text: "!" });
-		} else {
-			browser.browserAction.setBadgeText({ text: "" });
-			// If you use Chrome:
-			// chrome.browserAction.setBadgeText({ text: "" });
 		}
 	});
 }
