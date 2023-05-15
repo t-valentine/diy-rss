@@ -1,13 +1,14 @@
 // All you REALLY need to do is enter the RSS Feed URLs of comics you like below
 // Feel free to delete what's there.... Or keep them!
 var feeds = [
-	"https://feeds.acast.com/public/shows/re-dracula",
-	"https://feeds.acast.com/public/shows/630eb132f6525300127fd951",
-	"http://www.fairmeadowcomic.com/comic/rss",
-	"https://lunarblight.com/comic/rss",
+	"https://heirsoftheveil.com/feed/",
+	"https://feeds.acast.com/public/shows/re-dracula/",
+	"https://feeds.acast.com/public/shows/630eb132f6525300127fd951/",
+	"http://www.fairmeadowcomic.com/comic/rss/",
+	"https://lunarblight.com/comic/rss/",
 	"https://kingsofsorts.com/feed/",
-	"https://www.phantomarine.com/comic/rss",
-	"https://www.kochab-comic.com/comic/rss",
+	"https://www.phantomarine.com/comic/rss/",
+	"https://www.kochab-comic.com/comic/rss/",
 ];
 
 // BEWARE
