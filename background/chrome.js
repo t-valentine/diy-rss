@@ -2,8 +2,8 @@
 // Feel free to delete what's there.... Or keep them!
 var feeds = [
 	"https://kingsofsorts.com/feed/",
-	"https://www.phantomarine.com/comic/rss",
-	"https://www.kochab-comic.com/comic/rss",
+	"https://www.phantomarine.com/comic/rss/",
+	"https://www.kochab-comic.com/comic/rss/",
 ];
 
 // BEWARE
